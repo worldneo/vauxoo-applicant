@@ -15,10 +15,14 @@ name VARCHAR(25),
 description varchar(25)
 );
 
-
 ALTER TABLE employee ADD COLUMN id_department integer NOT NULL;
 ALTER TABLE employee ADD CONSTRAINT id_department FOREIGN KEY (id_department) REFERENCES employee_department (id);
 
 INSERT INTO employee (id,first_name,last_name)
 VALUES(01,'Miriam','Torres'),(02,'Armando','Cobos'),(03,'Eder','Martinez'),(04,'Elsa','Murat');
+
+INSERT INTO employee_department (id,name,description)
+VALUES(01,'finanzas','recursos'),(02,'Administrativo','archivos'),(03,'tecnico','manteniemton'),(04,'servicio social','dpt'),(05,'gerencia','gerentes'),(06,'contratacion','personal');
+
+
 
