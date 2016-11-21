@@ -12,9 +12,9 @@ class CalculatorClass:
     """
 
     def sum(self,lista):
-        sum=0
+        sum = 0
         for i in range(0,len(lista)):
-            sum=sum+lista[i]
+            sum = sum + lista[i]
         return sum
     """
        
